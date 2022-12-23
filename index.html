@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            max-width: 1400px;
+            margin: auto;
+            height: 100px;
+            background-color: gainsboro;
+            line-height: 60px;
+            padding: 20px;
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            font-size: 26px;
+            padding: 0 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        nav a:hover{
+           background-color: grey;
+        }
+        .left{
+          float: left;
+        }
+        .right{
+             float: right;
+        }
+        .img{
+            display: flex;
+            max-width: 1400px;
+            margin: auto;
+        }
+        .item1{
+            flex: 1;
+        }
+        .item1 img{
+            width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width:600px){
+            .img{
+                flex-direction: column;
+            }
+        }
+        .about{
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            padding: 100px 100px 50px 100px;
+            margin-top: 20px;
+        }
+        .about div{
+            height: 400px;
+            width: 300px;
+            margin: auto;
+            
+        }
+        .about img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            text-align-last: center;  
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .contact{
+            color: red;
+            font-size: 20px;
+        }
+        label{
+            text-align: center;
+            display: block;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        input{
+            display: block;
+            height: 35px;
+            width: 100%;
+        }
+        button{
+            color: white;
+            background-color: gray;
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            border: none;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+        }   
+        button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            color: black;
+        }
+        footer{
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            margin-bottom: 40px;
+            color: gray;
+        }
+        footer a{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <a class="left" href="">MY ART</a>
+            <a class="right" href="#about">About</a>  
+        </nav>
+        <div class="img">
+            <div class="item1">
+                <img src="streetart.jpg" alt="">
+                <img src="streetart2.jpg" alt="">
+                <img src="streetart5.jpg" alt="">
+            </div>
+            <div class="item1">
+                <img src="streetart3.jpg" alt="">
+                <img src="streetart4.jpg" alt="">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1>About</h1>
+            <div>
+                <img src="boy.jpg" alt="">
+            </div>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="contact">Do not hesitate to contact me!</p>
+            <label for="name">Name</label>
+            <input type="text">
+            <label for="name">E-mail</label>
+            <input type="text">
+            <label for="name">Message</label>
+            <input type="text">
+            <button type="submit">Send</button>
+        </div>
+        <footer>
+           <span>Powered by </span><a href="">w3.css</a>
+        </footer>
+</body>
+</html>
